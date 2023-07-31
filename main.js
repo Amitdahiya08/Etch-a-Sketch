@@ -54,12 +54,12 @@ function ColorDiv(){
 function getSize(){
     let input =prompt("Enter a Size between 1 to 50");
     let messageDiv= document.querySelector("#message");
-    if(input<1 || input=="" || input > 50){
-        messageDiv.innerHTML = "Enter a Valid Number";
-        return 16;
+    if(input>=1 && input<=50){
+        messageDiv.innerHTML= "Lets Draw";
     }
     else {
-        messageDiv.innerHTML= "Lets Draw";
+        messageDiv.innerHTML = "Enter a Valid Number";
+        return 16;
     }
     return input;
 }
